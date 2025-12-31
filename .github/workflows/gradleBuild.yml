@@ -26,5 +26,5 @@ jobs:
         cache: 'gradle'
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v5
-    - name: Build with Gradle
-      run: sudo ./gradlew build
+    - name: Clean and Build with Gradle
+      run: gradle clean build
